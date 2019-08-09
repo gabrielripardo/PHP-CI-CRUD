@@ -19,7 +19,7 @@
   <tbody>
    <?php foreach ($data as $d) { ?>      
       <tr>
-          <td><?php echo $d->title; ?></td>
+          <td><?php echo $d->nome; ?></td>
           <td><?php echo $d->description; ?></td>          
       <td>
         <form method="DELETE" action="<?php echo base_url('products/delete/'.$d->id);?>">
