@@ -3,7 +3,7 @@ class ProductsModel extends CI_Model{
     
     public function get_products(){
         if(!empty($this->input->get("search"))){
-          $this->db->like('title', $this->input->get("search"));
+          $this->db->like('nome', $this->input->get("search"));
           $this->db->or_like('description', $this->input->get("search")); 
         }
         $query = $this->db->get("products");
